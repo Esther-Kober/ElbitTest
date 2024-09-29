@@ -1,0 +1,40 @@
+[
+    {
+      "question": "How much is 1+1?",
+      "answers": [
+        {"text": "2", "isCorrect": true},
+        {"text": "100", "isCorrect": false},
+        {"text": "5", "isCorrect": false},
+        {"text": "1", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "How much is 8+2?",
+      "answers": [
+        {"text": "4", "isCorrect": false},
+        {"text": "3", "isCorrect": false},
+        {"text": "6", "isCorrect": false},
+        {"text": "10", "isCorrect": true}
+      ]
+    },
+    {
+      "question": "How much is 6+7?",
+      "answers": [
+        {"text": "5", "isCorrect": false},
+        {"text": "7", "isCorrect": false},
+        {"text": "13", "isCorrect": true},
+        {"text": "8", "isCorrect": false}
+      ]
+    }
+    ,
+    {
+      "question": "How much is 7+7?",
+      "answers": [
+        {"text": "5", "isCorrect": false},
+        {"text": "7", "isCorrect": false},
+        {"text": "14", "isCorrect": true},
+        {"text": "8", "isCorrect": false}
+      ]
+    }
+  ]
+  
