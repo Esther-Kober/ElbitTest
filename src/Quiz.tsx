@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Question } from './types';
 
+import { Button } from "antd";
+
 const Quiz: React.FC = () => {
     const [questions, setQuestions] = useState<Question[]>([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);// Track the question the user is currently on
@@ -81,7 +83,7 @@ const Quiz: React.FC = () => {
                     </div>
                 ))}
             </ul>
-            <button
+            <Button
                 onClick={() => {
                     if (currentQuestionIndex > 0) {
                         setCurrentQuestionIndex(currentQuestionIndex - 1);
@@ -90,13 +92,13 @@ const Quiz: React.FC = () => {
                 disabled={currentQuestionIndex === 0}
             >
                 Prev
-            </button>
+            </Button>
             {currentQuestionIndex === questions.length - 1 ?
-                <button onClick={handleFinish}>Done</button>
+                <Button onClick={handleFinish}>Done</Button>
                 :
-                <button onClick={handleNext}>
+                <Button onClick={handleNext}>
                     Next
-                </button>
+                </Button>
             }
         </div>
     );
